@@ -1,0 +1,179 @@
+/* Global styles */
+body {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: Comfortaa;
+}
+.first.layer, .mid.layer, .last.layer  {
+  display: flex;
+  justify-content: center;
+  position: absolute; /* requires parent container with non-static position */
+  top: 36px;
+  height: 627px;
+  width: 300px;
+}
+img.frame {
+  height: 700px;
+}
+
+/* First-layer */
+h1 {
+  position: absolute;
+  top: 80px;
+  text-shadow: 0px 0px 5px #000000;
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+img.hands {
+  position: absolute;
+  top: 270px;
+  height: 100px;
+}
+button.play, button.replay {
+  position: absolute;
+  top: 500px;
+  height: 45px;
+  width: 175px;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+  background: rgb(31 31 31);
+  border: 2px solid white;
+  border-radius: 13% / 50%;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* Mid-layer */
+img.computer-choice {
+  position: absolute;
+  top: 70px;
+  height: 130px;
+}
+img.player-choice {
+  position: absolute;
+  top: 220px;
+  height: 130px;
+}
+.message, .replay-box {
+  position: absolute;
+  top: 385px;
+  width: 176px;
+  padding: 15px 5px;
+  border: 1px solid rgb(90, 90, 90);   
+  border-radius: 8px;
+  background: rgba(239, 216, 115, 0.99);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+  text-shadow: 0px 0px 2px #000000;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+div.score-title {
+  position: absolute;
+  bottom: 7.5px;
+  height: 39px;
+  width: 100px;
+  padding: 7px 0 0 0;
+  box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.55);
+  border: 1.5px solid rgb(255, 255, 255);
+  border-radius: 50% 50% 25% 25% / 100% 100% 0% 0%;
+  border-bottom: none; 
+  background: rgb(36, 36, 36);
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 100;
+  color: white;
+}
+div.score-result {
+  padding: 15px 0 5px 0;
+  font-size: 0.9rem;
+  color: white;
+}
+.score-blue {
+  color: rgb(3, 155, 229);
+  padding-right: 8px;
+}
+.score-red {
+  color: rgb(248, 82, 85);
+  padding-left: 8px;
+}
+div.button {
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+  border: 1.5px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background: rgb(36, 36, 36);
+  height: 55px;
+  width: 55px;
+}
+div.left.button {
+  position: absolute;
+  bottom: 31px;
+  left: 55px;
+  overflow: hidden;
+}
+img.btn-img {
+  height: 50px; 
+}
+img.btn-img.rock {
+  padding: 2px 0 0 1px;
+}
+img.btn-img.rock:hover {
+  transform: translateX(-49.5%);
+}
+div.mid.button {
+  position: absolute;
+  bottom: 60px;
+  overflow: hidden;
+}
+img.btn-img.paper {
+  height: 60px;
+}
+img.btn-img.paper:hover {
+  transform: translateX(-50%);
+}
+div.right.button {
+  position: absolute;
+  bottom: 31px;
+  right: 55px;
+  overflow: hidden;
+}
+img.btn-img.scissors {
+  height: 56px;
+}
+img.btn-img.scissors:hover {
+  transform: translateX(-51.8%);
+}
+
+/* Last-layer */
+img.dark-screen {
+  position: absolute;
+  bottom: 2px;
+  height: 622px;
+}
+div.replay-box {
+  position: absolute;
+  top: 355px;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+button.replay {
+  position: static;
+}
+button:hover {
+  color: rgba(239, 216, 115, 1);
+}
+.replay-box span {
+  margin-bottom: 15px;
+}
+
+/* Dynamic styles */
+.hide {
+  visibility: hidden;
+}
